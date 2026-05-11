@@ -71,6 +71,8 @@ python server.py
 
 ## Course Connection
 
+📚 **[Course Repository](https://github.com/iamdgarcia/tlc_agents_training)** — Access the full Agentic AI for Beginners course materials
+
 This blueprint implements:
 - **Module 2.2: Retrieval-Augmented Generation (RAG) Basics**
 - **Module 2.3: Building a "Chat with Your Docs" Agent**
