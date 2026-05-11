@@ -1,0 +1,27 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; }
+.container { max-width: 800px; margin: 0 auto; padding: 20px; }
+header { text-align: center; margin-bottom: 20px; }
+header h1 { color: #2c3e50; margin-bottom: 10px; }
+header p { color: #7f8c8d; }
+#info-box { background: #e8f8f5; padding: 12px 15px; border-radius: 8px; margin-bottom: 15px; text-align: center; color: #16a085; font-size: 0.9em; }
+#chat-container { display: flex; flex-direction: column; height: 350px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; }
+.chat-messages { flex: 1; padding: 20px; overflow-y: auto; }
+.message { margin-bottom: 15px; max-width: 80%; }
+.message.user { align-self: flex-end; background-color: #3498db; color: white; padding: 10px 15px; border-radius: 18px 18px 0 18px; }
+.message.assistant { align-self: flex-start; background-color: #ecf0f1; color: #333; padding: 10px 15px; border-radius: 18px 18px 18px 0; }
+.message-content { margin-bottom: 5px; white-space: pre-wrap; font-size: 0.95em; }
+.message-time { font-size: 0.75em; opacity: 0.7; }
+#chat-input-container { display: flex; padding: 15px; background-color: #f8f9fa; border-top: 1px solid #eee; }
+#user-input { flex: 1; padding: 12px 15px; border: 1px solid #ddd; border-radius: 20px; font-size: 16px; outline: none; }
+#user-input:focus { border-color: #3498db; }
+#send-button { margin-left: 10px; padding: 0 20px; background-color: #3498db; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 16px; }
+#send-button:hover { background-color: #2980b9; }
+.sources-panel { margin-top: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.sources-panel h3 { margin: 0; padding: 15px 20px; background-color: #fef9e7; border-bottom: 1px solid #eee; color: #2c3e50; }
+#sources-list { padding: 15px; max-height: 180px; overflow-y: auto; }
+.source-item { padding: 10px; margin-bottom: 10px; border-left: 3px solid #3498db; background-color: #f8f9fa; border-radius: 4px; }
+.source-item .doc-name { font-weight: bold; color: #2c3e50; margin-bottom: 5px; }
+.source-item .doc-content { font-size: 0.85em; color: #555; }
+.source-item .relevance { font-size: 0.75em; color: #7f8c8d; }
+@media (max-width: 600px) { .container { padding: 10px; } }

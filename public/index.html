@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Agent Blueprint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RAG Agent Blueprint</h1>
+            <p>Chat with your documents - Based on Course Modules 2.2-2.3</p>
+        </header>
+        
+        <main>
+            <div id="info-box">Knowledge Base: Urban Gardening Topics</div>
+            
+            <div id="chat-container">
+                <div id="chat-messages" class="chat-messages"></div>
+                
+                <div id="chat-input-container">
+                    <input type="text" id="user-input" placeholder="Ask about the documents... (e.g., 'What are the health benefits of urban gardening?')" autocomplete="off">
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+            
+            <div id="sources-panel" class="sources-panel">
+                <h3>Retrieved Documents</h3>
+                <div id="sources-list"></div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Deployed via Netlify using your affiliate link</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
